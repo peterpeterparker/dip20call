@@ -1,0 +1,22 @@
+{
+  "canisters": {
+    "caller": {
+      "candid": "src/caller/caller.did",
+      "package": "caller",
+      "type": "rust"
+    },
+    "answer": {
+      "candid": "src/answer/answer.did",
+      "package": "answer",
+      "type": "rust"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

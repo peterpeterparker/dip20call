@@ -1,0 +1,13 @@
+type Result = variant { Ok : nat16; Err : TxError };
+type TxError = variant {
+  InsufficientAllowance;
+  InsufficientBalance;
+  ErrorOperationStyle;
+  Unauthorized;
+  LedgerTrap;
+  ErrorTo;
+  Other : text;
+  BlockUsed;
+  AmountTooSmall;
+};
+service : { transferFrom : (principal, principal, nat) -> (Result) }
